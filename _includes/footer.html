@@ -10,7 +10,11 @@
       <a href="#contact">Contact</a>
     </nav>
     <div class="footer-social">
-      <!-- Social links will be populated in Phase 3 -->
+      {% for link in site.data.social %}
+        <a href="{{ link.url }}" title="{{ link.name }}" aria-label="{{ link.name }} link" target="_blank" rel="noopener">
+          {{ link.name }}
+        </a>
+      {% endfor %}
     </div>
   </div>
 </footer>

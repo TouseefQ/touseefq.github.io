@@ -13,6 +13,15 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
 
+    <!-- Social links in center-right -->
+    <div class="nav-social">
+      {% for link in site.data.social %}
+        <a href="{{ link.url }}" title="{{ link.name }}" aria-label="{{ link.name }} link" target="_blank" rel="noopener">
+          {{ link.name }}
+        </a>
+      {% endfor %}
+    </div>
+
     <!-- Theme toggle on right -->
     {% include theme-toggle.html %}
   </nav>
