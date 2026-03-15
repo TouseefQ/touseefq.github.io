@@ -1,0 +1,24 @@
+// ============================================================================
+// Main SCSS Import File
+// ============================================================================
+// This file orchestrates all SCSS imports in the correct order:
+// 1. Variables (design tokens)
+// 2. Theme (CSS variables)
+// 3. Reset (normalization)
+// Later tasks will add component stylesheets here
+// ============================================================================
+
+@import "variables";
+@import "theme";
+@import "reset";
+
+// Component imports will be added here in future tasks
+// - @import "header";
+// - @import "hero";
+// - @import "about";
+// - @import "skills";
+// - @import "projects";
+// - @import "experience";
+// - @import "contact";
+// - @import "footer";
+// - @import "responsive";
