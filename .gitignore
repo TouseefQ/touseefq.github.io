@@ -1,1 +1,6 @@
 .planning/
+_site/
+.jekyll-cache/
+.DS_Store
+node_modules/
+*.gem

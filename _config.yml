@@ -1,0 +1,32 @@
+# Site configuration for GitHub Pages
+title: "Touseef Qamar"
+description: "Full-Stack Developer | DevOps | AI/ML — Portfolio & Resume"
+author: "Touseef Qamar"
+url: "https://touseefq.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: /:title/
+
+# No custom theme - we're building our own
+theme: null
+
+# SCSS/CSS compilation
+sass:
+  style: compressed
+
+# Plugins enabled for GitHub Pages
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Files to exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .gitignore
+  - node_modules/
+  - .DS_Store
+  - .planning/
