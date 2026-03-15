@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character encoding and viewport for responsive design -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Theme initialization script: Runs BEFORE styles load to prevent flash of wrong theme -->
+  <!-- This must be inline in <head> to execute before style.css loads -->
+  <script>
+    (function() {
+      try {
+        const theme = localStorage.getItem('theme') || 'light';
+        const isDark = theme === 'dark';
+
+        // Add appropriate class to document root
+        if (isDark) {
+          document.documentElement.classList.add('dark-mode');
+        } else {
+          document.documentElement.classList.add('light-mode');
+        }
+      } catch (e) {
+        // localStorage might be disabled; fall back to light theme
+        document.documentElement.classList.add('light-mode');
+      }
+    })();
+  </script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico">
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="{{ site.description }}">
+  <meta name="author" content="{{ site.author }}">
+  <meta name="keywords" content="portfolio, developer, full-stack, DevOps, AI/ML">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:url" content="{{ site.url }}">
+
+  <!-- Twitter Tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ site.title }}">
+  <meta name="twitter:description" content="{{ site.description }}">
+
+  <!-- Additional meta tags for PWA readiness -->
+  <meta name="theme-color" content="#0066cc">
+</head>
+
+<body>
+  <!-- SKIP LINK: Accessibility feature for keyboard navigation -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- HEADER: Navigation and theme toggle -->
+  {% include header.html %}
+
+  <!-- MAIN: Content sections -->
+  <main id="main-content">
+    <!-- HERO: Name, title, tagline -->
+    {% include hero.html %}
+
+    <!-- ABOUT: Bio section -->
+    {% include about.html %}
+
+    <!-- SKILLS: Tech grid -->
+    {% include skills.html %}
+
+    <!-- PROJECTS: Portfolio projects -->
+    {% include projects.html %}
+
+    <!-- EXPERIENCE: Work history and education -->
+    {% include experience.html %}
+
+    <!-- CONTACT: Contact form and social -->
+    {% include contact.html %}
+  </main>
+
+  <!-- FOOTER: Navigation, social, credits -->
+  {% include footer.html %}
+
+  <!-- BACK-TO-TOP: Scroll button -->
+  {% include back-to-top.html %}
+
+  <!-- JavaScript: Theme toggle and interactions (async safe after content) -->
+  <script src="{{ site.baseurl }}/assets/js/theme-toggle.js" async></script>
+  <script src="{{ site.baseurl }}/assets/js/smooth-scroll.js" async></script>
+  <script src="{{ site.baseurl }}/assets/js/form-handler.js" async></script>
+</body>
+</html>
