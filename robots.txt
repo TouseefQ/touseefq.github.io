@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /_site/
+Sitemap: https://touseefq.github.io/sitemap.xml
