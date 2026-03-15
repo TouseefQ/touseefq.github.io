@@ -1,4 +1,16 @@
-<!-- Skills section placeholder - to be implemented in Phase 1 Plan 02 -->
-<section id="skills">
-  <!-- Skills content will be added here -->
+<!-- Skills section with grid of categories -->
+<section id="skills" class="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    {% for category in site.data.skills %}
+      <div class="skill-category">
+        <h3>{{ category.name }}</h3>
+        <ul>
+          {% for skill in category.items %}
+            <li>{{ skill }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
 </section>

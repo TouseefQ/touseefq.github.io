@@ -1,4 +1,14 @@
-<!-- Experience section placeholder - to be implemented in Phase 1 Plan 02 -->
-<section id="experience">
-  <!-- Experience content will be added here -->
+<!-- Experience section with timeline of work and education -->
+<section id="experience" class="experience">
+  <h2>Experience & Education</h2>
+  <div class="timeline">
+    {% for item in site.data.experience %}
+      <div class="timeline-item">
+        <h3>{{ item.title }}</h3>
+        <p class="company">{{ item.company }}</p>
+        <p class="dates">{{ item.dates }}</p>
+        <p>{{ item.description }}</p>
+      </div>
+    {% endfor %}
+  </div>
 </section>
