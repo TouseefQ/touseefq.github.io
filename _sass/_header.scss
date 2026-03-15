@@ -22,25 +22,7 @@
   padding: 1rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-
-  a {
-    color: var(--color-text);
-    text-decoration: none;
-    transition: color $transition-fast;
-
-    &:hover {
-      color: var(--color-accent);
-    }
-
-    &:visited {
-      color: var(--color-text);
-    }
-  }
+  gap: 1rem;
 }
 
 .nav-links {
