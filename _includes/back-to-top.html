@@ -1,4 +1,16 @@
-<!-- Back-to-top button placeholder - to be implemented in Phase 1 Plan 02 -->
-<button id="back-to-top" class="back-to-top">
-  <!-- Back-to-top content will be added here -->
-</button>
+<!-- Back-to-top button with scroll functionality -->
+<button id="back-to-top" class="back-to-top" aria-label="Back to top">↑ Top</button>
+
+<script>
+  const backToTopBtn = document.getElementById('back-to-top');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.style.display = 'block';
+    } else {
+      backToTopBtn.style.display = 'none';
+    }
+  });
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
