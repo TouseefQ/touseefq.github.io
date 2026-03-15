@@ -1,0 +1,47 @@
+- name: "DevOps"
+  items:
+    - "Kubernetes"
+    - "Docker"
+    - "AWS"
+    - "CI/CD"
+    - "Terraform"
+
+- name: "Backend"
+  items:
+    - "Node.js"
+    - "Python"
+    - "Go"
+    - "Java"
+    - "PostgreSQL"
+
+- name: "Frontend"
+  items:
+    - "React"
+    - "Vue.js"
+    - "JavaScript"
+    - "TypeScript"
+    - "CSS"
+
+- name: "AI/ML"
+  items:
+    - "PyTorch"
+    - "TensorFlow"
+    - "Machine Learning"
+    - "Natural Language Processing"
+    - "Computer Vision"
+
+- name: "Languages"
+  items:
+    - "JavaScript"
+    - "TypeScript"
+    - "Python"
+    - "Go"
+    - "Java"
+
+- name: "CMS/Other"
+  items:
+    - "Jekyll"
+    - "Git"
+    - "REST APIs"
+    - "GraphQL"
+    - "Firebase"

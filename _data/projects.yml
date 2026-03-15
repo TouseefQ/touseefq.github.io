@@ -1,0 +1,41 @@
+- name: "Project 1"
+  description: "Placeholder description for project 1"
+  url: "https://github.com/TouseefQ/project1"
+  techs:
+    - "React"
+    - "Node.js"
+
+- name: "Project 2"
+  description: "Placeholder description for project 2"
+  url: "https://github.com/TouseefQ/project2"
+  techs:
+    - "Python"
+    - "Django"
+
+- name: "Project 3"
+  description: "Placeholder description for project 3"
+  url: "https://github.com/TouseefQ/project3"
+  techs:
+    - "Kubernetes"
+    - "Docker"
+
+- name: "Project 4"
+  description: "Placeholder description for project 4"
+  url: "https://github.com/TouseefQ/project4"
+  techs:
+    - "Go"
+    - "gRPC"
+
+- name: "Project 5"
+  description: "Placeholder description for project 5"
+  url: "https://github.com/TouseefQ/project5"
+  techs:
+    - "Machine Learning"
+    - "PyTorch"
+
+- name: "Project 6"
+  description: "Placeholder description for project 6"
+  url: "https://github.com/TouseefQ/project6"
+  techs:
+    - "AWS"
+    - "Terraform"
