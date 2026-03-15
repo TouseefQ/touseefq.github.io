@@ -27,12 +27,19 @@
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: var(--color-text);
-  text-decoration: none;
-  transition: color $transition-fast;
 
-  &:hover {
-    color: var(--color-accent);
+  a {
+    color: var(--color-text);
+    text-decoration: none;
+    transition: color $transition-fast;
+
+    &:hover {
+      color: var(--color-accent);
+    }
+
+    &:visited {
+      color: var(--color-text);
+    }
   }
 }
 
