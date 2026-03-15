@@ -37,16 +37,19 @@
   <meta name="author" content="{{ site.author }}">
   <meta name="keywords" content="portfolio, developer, full-stack, DevOps, AI/ML">
 
-  <!-- Open Graph Tags -->
+  <!-- Open Graph Tags for social sharing -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="{{ site.title }}">
-  <meta property="og:description" content="{{ site.description }}">
-  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}{{ site.image }}">
+  <meta property="og:image:alt" content="Touseef Qamar - Full-Stack Developer">
 
-  <!-- Twitter Tags -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="{{ site.title }}">
-  <meta name="twitter:description" content="{{ site.description }}">
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:image" content="{{ site.url }}{{ site.image }}"
 
   <!-- Additional meta tags for PWA readiness -->
   <meta name="theme-color" content="#0066cc">
