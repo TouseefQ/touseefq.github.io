@@ -1,0 +1,87 @@
+// ============================================================================
+// Footer Styling
+// ============================================================================
+// Footer navigation and credits.
+// ============================================================================
+
+.footer {
+  background: var(--color-bg-secondary);
+  padding: $spacing-lg;
+  border-top: 1px solid var(--color-border);
+  margin-top: $spacing-xl;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: $spacing-md;
+  margin: $spacing-md 0;
+  list-style: none;
+  flex-wrap: wrap;
+
+  a {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-size: $font-size-base;
+    transition: color $transition-fast;
+    font-weight: 500;
+
+    &:hover {
+      color: var(--color-text);
+    }
+  }
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: $spacing-md;
+  margin: $spacing-md 0;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--color-bg);
+    color: var(--color-accent);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background $transition-fast, transform $transition-fast;
+
+    &:hover {
+      background: var(--color-accent);
+      color: white;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.footer-credits {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-top: $spacing-lg;
+  padding-top: $spacing-lg;
+  border-top: 1px solid var(--color-border);
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: var(--color-accent);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

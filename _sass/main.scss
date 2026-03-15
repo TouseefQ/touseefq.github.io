@@ -11,14 +11,13 @@
 @import "variables";
 @import "theme";
 @import "reset";
-
-// Component imports will be added here in future tasks
-// - @import "header";
-// - @import "hero";
-// - @import "about";
-// - @import "skills";
-// - @import "projects";
-// - @import "experience";
-// - @import "contact";
-// - @import "footer";
-// - @import "responsive";
+@import "header";
+@import "hero";
+@import "about";
+@import "skills";
+@import "projects";
+@import "experience";
+@import "contact";
+@import "footer";
+@import "back-to-top";
+@import "responsive";

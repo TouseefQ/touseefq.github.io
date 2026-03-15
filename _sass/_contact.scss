@@ -1,0 +1,120 @@
+// ============================================================================
+// Contact Section Styling
+// ============================================================================
+// Contact form and social links section.
+// ============================================================================
+
+.contact {
+  padding: $spacing-lg;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--color-bg);
+
+  h2 {
+    font-size: $font-size-h2;
+    margin-bottom: $spacing-md;
+    color: var(--color-text);
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    color: var(--color-text-muted);
+    margin-bottom: $spacing-lg;
+  }
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+
+  .form-group {
+    margin-bottom: $spacing-md;
+  }
+
+  label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+    font-size: $font-size-base;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: $spacing-sm;
+    margin-bottom: 0;
+    border: 1px solid var(--color-input-border);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: var(--color-input-bg);
+    color: var(--color-text);
+    transition: border-color $transition-fast;
+
+    &:focus {
+      outline: none;
+      border-color: var(--color-input-focus);
+      box-shadow: 0 0 0 3px var(--color-accent-light);
+    }
+
+    &::placeholder {
+      color: var(--color-text-muted);
+    }
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 150px;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    padding: $spacing-md;
+    background: var(--color-accent);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background $transition-fast;
+
+    &:hover {
+      background: var(--color-accent-dark);
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: $spacing-lg;
+  margin-top: $spacing-xl;
+  flex-wrap: wrap;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--color-bg-secondary);
+    color: var(--color-accent);
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: background $transition-fast, transform $transition-fast;
+
+    &:hover {
+      background: var(--color-accent);
+      color: white;
+      transform: translateY(-4px);
+    }
+  }
+}

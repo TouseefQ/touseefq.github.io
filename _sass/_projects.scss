@@ -1,0 +1,104 @@
+// ============================================================================
+// Projects Section Styling
+// ============================================================================
+// Project cards with grid layout and hover effects.
+// Mobile: 1 column, Tablet: 2 columns, Desktop: 3 columns
+// ============================================================================
+
+.projects {
+  padding: $spacing-lg;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--color-bg);
+
+  h2 {
+    font-size: $font-size-h2;
+    margin-bottom: $spacing-md;
+    color: var(--color-text);
+  }
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-lg;
+}
+
+.project-card {
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: $spacing-md;
+  transition: transform $transition-base, box-shadow $transition-base;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px var(--color-shadow-lg);
+  }
+
+  h3 {
+    font-size: $font-size-h4;
+    margin-bottom: $spacing-sm;
+    color: var(--color-text);
+  }
+
+  p {
+    font-size: $font-size-base;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    flex-grow: 1;
+    margin-bottom: $spacing-md;
+  }
+
+  .techs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-sm;
+    margin: $spacing-md 0;
+  }
+
+  .tech-tag {
+    background: var(--color-accent-light);
+    color: var(--color-accent);
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .links {
+    display: flex;
+    gap: $spacing-sm;
+    margin-top: $spacing-md;
+
+    a {
+      display: inline-block;
+      background: var(--color-accent);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background $transition-fast;
+      font-weight: 500;
+      font-size: 0.9rem;
+
+      &:hover {
+        background: var(--color-accent-dark);
+      }
+
+      &.link-secondary {
+        background: transparent;
+        color: var(--color-accent);
+        border: 1px solid var(--color-accent);
+
+        &:hover {
+          background: var(--color-accent-light);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+// ============================================================================
+// Hero Section Styling
+// ============================================================================
+// Large, centered hero section with name, title, tagline, and CTA buttons.
+// Sets the tone for the entire portfolio.
+// ============================================================================
+
+.hero {
+  text-align: center;
+  padding: $spacing-xl;
+  background: var(--color-bg-secondary);
+  border-bottom: 1px solid var(--color-border);
+
+  h1 {
+    font-size: $font-size-h1;
+    margin-bottom: $spacing-md;
+    color: var(--color-text);
+    line-height: $line-height-heading;
+  }
+
+  .title {
+    font-size: $font-size-xl;
+    color: var(--color-accent);
+    font-weight: 600;
+    margin-bottom: $spacing-sm;
+  }
+
+  .tagline {
+    font-size: $font-size-lg;
+    color: var(--color-text-muted);
+    margin-bottom: $spacing-lg;
+    line-height: $line-height-base;
+  }
+
+  .description {
+    font-size: $font-size-base;
+    color: var(--color-text);
+    margin-bottom: $spacing-lg;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: $line-height-base;
+  }
+
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: $spacing-md;
+    flex-wrap: wrap;
+
+    .btn {
+      display: inline-block;
+      background: var(--color-accent);
+      color: white;
+      padding: $spacing-sm $spacing-lg;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background $transition-fast;
+      font-weight: 500;
+
+      &:hover {
+        background: var(--color-accent-dark);
+      }
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--color-accent);
+      border: 2px solid var(--color-accent);
+
+      &:hover {
+        background: var(--color-accent-light);
+      }
+    }
+  }
+}

@@ -1,0 +1,256 @@
+// ============================================================================
+// Responsive Design - Media Queries
+// ============================================================================
+// Mobile-first breakpoints. Base styles are mobile, these override for larger screens.
+// Order: Tablet (768px) → Desktop (1024px) → Wide (1440px)
+// ============================================================================
+
+// ============================================================================
+// TABLET - 768px and up
+// ============================================================================
+@media (min-width: 768px) {
+  // Header/Navigation
+  .nav {
+    padding: 1rem 3rem;
+  }
+
+  .nav-links {
+    gap: 3rem;
+  }
+
+  // Hero
+  .hero {
+    padding: $spacing-2xl;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    .tagline {
+      font-size: $font-size-xl;
+    }
+  }
+
+  // About
+  .about {
+    padding: $spacing-xl;
+  }
+
+  // Skills - 2 columns
+  .skills {
+    padding: $spacing-xl;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: $spacing-lg;
+  }
+
+  // Projects - 2 columns
+  .projects {
+    padding: $spacing-xl;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: $spacing-lg;
+  }
+
+  // Experience
+  .experience {
+    padding: $spacing-xl;
+  }
+
+  // Contact
+  .contact {
+    padding: $spacing-xl;
+  }
+
+  form {
+    max-width: 600px;
+  }
+
+  // Footer
+  .footer {
+    padding: $spacing-xl;
+  }
+
+  .footer-nav {
+    gap: $spacing-lg;
+  }
+
+  .footer-social {
+    gap: $spacing-lg;
+  }
+}
+
+// ============================================================================
+// DESKTOP - 1024px and up
+// ============================================================================
+@media (min-width: 1024px) {
+  // Header/Navigation
+  .nav {
+    padding: 1rem 4rem;
+  }
+
+  // Hero
+  .hero {
+    padding: $spacing-2xl 4rem;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    .cta-buttons {
+      gap: $spacing-lg;
+    }
+  }
+
+  // About
+  .about {
+    padding: $spacing-xl 4rem;
+
+    p {
+      font-size: 1.05rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  // Skills - 3 columns
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: $spacing-xl;
+  }
+
+  .skills {
+    padding: $spacing-xl 4rem;
+  }
+
+  // Projects - 3 columns
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: $spacing-xl;
+  }
+
+  .projects {
+    padding: $spacing-xl 4rem;
+  }
+
+  // Experience
+  .experience {
+    padding: $spacing-xl 4rem;
+  }
+
+  .timeline {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  // Contact
+  .contact {
+    padding: $spacing-xl 4rem;
+  }
+
+  form {
+    max-width: 700px;
+  }
+
+  .social-links {
+    gap: $spacing-xl;
+  }
+
+  // Footer
+  .footer {
+    padding: $spacing-xl 4rem;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-nav {
+    flex: 1;
+    justify-content: flex-start;
+  }
+
+  .footer-social {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .footer-credits {
+    flex: 1;
+    text-align: right;
+    border-top: none;
+    border-left: 1px solid var(--color-border);
+    padding-left: $spacing-lg;
+    margin: 0;
+  }
+}
+
+// ============================================================================
+// WIDE SCREENS - 1440px and up
+// ============================================================================
+@media (min-width: 1440px) {
+  // Hero
+  .hero {
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+
+  // Max content width for ultra-wide screens
+  .nav,
+  .about,
+  .skills,
+  .projects,
+  .experience,
+  .contact,
+  .footer-content {
+    max-width: 1400px;
+  }
+
+  // Add more breathing room
+  .about,
+  .skills,
+  .projects,
+  .experience,
+  .contact {
+    padding-top: $spacing-2xl;
+    padding-bottom: $spacing-2xl;
+  }
+}
+
+// ============================================================================
+// PRINT STYLES
+// ============================================================================
+@media print {
+  .header,
+  .footer,
+  .back-to-top,
+  .theme-toggle {
+    display: none;
+  }
+
+  * {
+    background: white;
+    color: black;
+  }
+
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+
+  .project-card {
+    page-break-inside: avoid;
+  }
+
+  .timeline-item {
+    page-break-inside: avoid;
+  }
+}
