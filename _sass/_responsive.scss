@@ -40,20 +40,49 @@
 
   .nav-links {
     display: flex;
-    gap: 3rem;
+    gap: 0.5rem;
   }
 
-  // Hero
+  // Hero — switch to horizontal split
   .hero {
     padding: $spacing-2xl;
+  }
 
-    h1 {
-      font-size: 2.5rem;
-    }
+  .hero-container {
+    flex-direction: row;
+    align-items: center;
+  }
 
-    .tagline {
-      font-size: $font-size-xl;
-    }
+  .hero-image-side {
+    width: 45%;
+    flex-shrink: 0;
+  }
+
+  .hero-image {
+    height: 380px;
+    border-radius: 10px;
+  }
+
+  .hero-content-side {
+    text-align: left;
+    flex: 1;
+  }
+
+  .hero-avatar {
+    margin: 0 0 $spacing-sm 0;
+  }
+
+  .hero-description {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .cta-buttons {
+    justify-content: flex-start;
+  }
+
+  .hero-content-side h1 {
+    font-size: 2.25rem;
   }
 
   // About
@@ -100,13 +129,6 @@
     padding: $spacing-xl;
   }
 
-  .footer-nav {
-    gap: $spacing-lg;
-  }
-
-  .footer-social {
-    gap: $spacing-lg;
-  }
 }
 
 // ============================================================================
@@ -121,14 +143,23 @@
   // Hero
   .hero {
     padding: $spacing-2xl 4rem;
+  }
 
-    h1 {
-      font-size: 3rem;
-    }
+  .hero-container {
+    gap: $spacing-xl;
+  }
 
-    .cta-buttons {
-      gap: $spacing-lg;
-    }
+  .hero-image {
+    height: 450px;
+    border-radius: 12px;
+  }
+
+  .hero-content-side h1 {
+    font-size: 2.75rem;
+  }
+
+  .cta-buttons {
+    gap: $spacing-md;
   }
 
   // About
@@ -137,7 +168,7 @@
 
     p {
       font-size: 1.05rem;
-      max-width: 800px;
+      max-width: 1100px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -191,30 +222,6 @@
     padding: $spacing-xl 4rem;
   }
 
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .footer-nav {
-    flex: 1;
-    justify-content: flex-start;
-  }
-
-  .footer-social {
-    flex: 1;
-    justify-content: center;
-  }
-
-  .footer-credits {
-    flex: 1;
-    text-align: right;
-    border-top: none;
-    border-left: 1px solid var(--color-border);
-    padding-left: $spacing-lg;
-    margin: 0;
-  }
 }
 
 // ============================================================================
@@ -222,10 +229,12 @@
 // ============================================================================
 @media (min-width: 1440px) {
   // Hero
-  .hero {
-    h1 {
-      font-size: 3.5rem;
-    }
+  .hero-content-side h1 {
+    font-size: 3rem;
+  }
+
+  .hero-container {
+    max-width: 1400px;
   }
 
   // Max content width for ultra-wide screens

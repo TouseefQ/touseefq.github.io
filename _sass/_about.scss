@@ -17,8 +17,8 @@
 
   p {
     font-size: $font-size-base;
-    line-height: 1.6;
-    color: var(--color-text);
+    line-height: $line-height-base;
+    color: var(--color-text-muted);
     margin-bottom: $spacing-md;
 
     &:last-child {

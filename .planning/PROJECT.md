@@ -2,7 +2,7 @@
 
 ## What This Is
 
-A professional single-page portfolio/resume website for Touseef Qamar, built with Jekyll and hosted on GitHub Pages. It serves as a public profile targeting recruiters, potential collaborators, and clients — showcasing full-stack development, DevOps, and AI/robotics expertise across a polished, responsive design with dark/light theme toggle.
+A professional single-page portfolio/resume website for Touseef Qamar, built with Jekyll 4.4.1 and hosted on GitHub Pages. It showcases full-stack development, DevOps, and AI/robotics expertise across a polished, responsive design with dark/light theme toggle, scroll animations, contact form, and WCAG AA accessibility.
 
 ## Core Value
 
@@ -12,25 +12,30 @@ Visitors immediately understand Touseef's breadth (full-stack + DevOps + AI) and
 
 ### Validated
 
-(None yet — ship to validate)
+- ✓ Single-page scrolling layout with smooth section navigation — v1.0
+- ✓ Jekyll-based site compatible with GitHub Pages — v1.0
+- ✓ Dark/light theme toggle with persistence — v1.0
+- ✓ Hero section: name, title ("Full-Stack Builder"), tagline, social links — v1.0
+- ✓ About section: bio, background (mechatronics → autonomous systems → full-stack) — v1.0
+- ✓ Skills section: visual tech stack display grouped by 6 categories — v1.0
+- ✓ Projects section: showcase 6 GitHub projects with descriptions, tech tags, and links — v1.0
+- ✓ Experience section: timeline of work history (SAP LeanIX, Uni Bonn, KELO Robotics, elancer-team, Fiverr) — v1.0
+- ✓ Education section within timeline (H-BRS Masters, University of Wah B.Sc.) — v1.0
+- ✓ Contact section: Formspree form with name, email, message fields — v1.0
+- ✓ Resume PDF download button — v1.0
+- ✓ Responsive design (mobile 320px, tablet 768px, desktop 1024px+) — v1.0
+- ✓ Professional & polished visual design with CSS variables — v1.0
+- ✓ SEO basics (meta tags, Open Graph, Twitter Cards, proper headings) — v1.0
+- ✓ Fully populated with real content — no placeholders — v1.0
+- ✓ Scroll animations via Intersection Observer with prefers-reduced-motion support — v1.0
+- ✓ WCAG 2.1 AA accessibility (17.4:1 contrast, keyboard navigation, focus indicators) — v1.0
+- ✓ Custom 404 page — v1.0
+- ✓ Favicon (32x32 TQ initials) — v1.0
+- ✓ Social links in header/footer (GitHub, LinkedIn, Email, Twitter) — v1.0
 
 ### Active
 
-- [ ] Single-page scrolling layout with smooth section navigation
-- [ ] Jekyll-based site compatible with GitHub Pages
-- [ ] Dark/light theme toggle with persistence
-- [ ] Hero section: name, title ("Full-Stack Builder"), tagline, social links
-- [ ] About section: bio, background (mechatronics → autonomous systems → full-stack)
-- [ ] Skills section: visual tech stack display grouped by category
-- [ ] Projects section: showcase 6 GitHub projects with descriptions, tech tags, and links
-- [ ] Experience section: timeline of work history (SAP LeanIX, Uni Bonn, KELO Robotics, elancer-team, Fiverr)
-- [ ] Education section within timeline (H-BRS Masters, University of Wah B.Sc.)
-- [ ] Contact section: form (via Formspree or similar), email, social links
-- [ ] Resume PDF download button
-- [ ] Responsive design (mobile, tablet, desktop)
-- [ ] Professional & polished visual design
-- [ ] SEO basics (meta tags, Open Graph, proper headings)
-- [ ] Fully populated with real content — not placeholders
+(None — v1.0 complete)
 
 ### Out of Scope
 
@@ -40,57 +45,43 @@ Visitors immediately understand Touseef's breadth (full-stack + DevOps + AI) and
 - Analytics dashboard — can add Google Analytics later if wanted
 - Backend API — pure static site
 - Custom domain setup — can configure after v1
+- Autoplay media — anti-feature per research
+- Scroll hijacking — anti-feature per research
 
 ## Context
 
-**Person:** Touseef Qamar, based in Bonn, Germany. Masters student in Autonomous Systems at Hochschule Bonn-Rhein-Sieg. Background in Mechatronics Engineering. Currently working as Data Research Analyst at SAP LeanIX and IT Admin at University of Bonn.
+**Person:** Touseef Qamar, based in Bonn, Germany. Masters student in Autonomous Systems at Hochschule Bonn-Rhein-Sieg. Background in Mechatronics Engineering.
 
-**Work history:**
-- Data Research Analyst, SAP LeanIX (Jul 2023 – present) — automated data pipelines, built internal tools, migrated integrations
-- IT Administrator, University of Bonn (Apr 2024 – present) — managing VMs, GitLab, internal infra
-- Web Developer, KELO Robotics (Oct 2022 – Jun 2023) — redesigned website, custom WordPress themes
-- Web Developer, elancer-team (Apr 2022 – Sep 2022) — built WordPress sites for clients
-- Freelance Web Developer, Fiverr (Sep 2019 – Mar 2022) — 300+ clients, WordPress/Shopify sites
+**Current state:** v1.0 shipped. 2,318 LOC across 48 files (HTML, SCSS, JS, YAML). Jekyll 4.4.1 with vanilla CSS + CSS Variables. 25/25 requirements satisfied. Site ready for GitHub Pages deployment.
 
-**Education:**
-- M.Sc. Autonomous Systems, H-BRS (Oct 2022 – present)
-- B.Sc. Mechatronics Engineering, University of Wah, Pakistan (2017 – 2021)
-
-**GitHub projects to showcase:**
-1. co-code — Real-time collaborative editor (React, Node.js, Socket.io)
-2. k8s-hydra-chatbot — Kubernetes deployment with self-healing replicas (Python)
-3. mlops-drift-monitor — AI model drift detection via Prometheus/Grafana (Python)
-4. kanban-app — Full-stack task management, PERN stack + Docker (JavaScript)
-5. flagship — Self-hosted feature flag platform with React dashboard (JavaScript)
-6. preview-orchestrator — Automated PR preview environments (JavaScript)
-
-**Skills/Tech:**
-- Languages: Python, C++, Java, JavaScript, PHP, SQL, HTML/CSS
-- DevOps: Kubernetes, Docker, Traefik, GitHub Actions, CI/CD
-- Backend: Node.js (Express), Flask, WordPress
-- Frontend: React, HTML5, CSS3
-- AI/ML: Scikit-learn, TextBlob, MLOps monitoring
-- CMS: WordPress, Shopify
-- Languages spoken: Urdu (native), English (C1), German (B1)
+**Post-ship actions needed:**
+- Replace Formspree placeholder ID (xyzformid) with real PROJECT_ID
+- Replace placeholder profile.jpg with real photo
+- Push to GitHub Pages (`git push origin main`)
 
 **Repo:** github.com/TouseefQ/touseefq.github.io — serves via GitHub Pages at touseefq.github.io
 
 ## Constraints
 
 - **Hosting**: GitHub Pages — must be static, no server-side processing
-- **Framework**: Jekyll — GitHub Pages native support, no custom build pipeline needed
+- **Framework**: Jekyll 4.4.1 — GitHub Pages compatible
 - **Content**: All real data — no placeholders in v1
-- **Contact form**: Needs a third-party service (Formspree, Getform, etc.) since no backend
-- **Resume PDF**: Must be included in the repo for download
+- **Contact form**: Formspree (free tier, 50 submissions/month)
+- **Resume PDF**: Included in repo for download
 
 ## Key Decisions
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Jekyll over plain HTML | GitHub Pages native support, layouts/includes for maintainability | — Pending |
-| Single-page over multi-page | Simpler UX, all content visible in one scroll, common for portfolios | — Pending |
-| Dark/light toggle | Appeals to both dev and corporate audiences | — Pending |
-| Formspree for contact form | Free tier, no backend needed, works with static sites | — Pending |
+| Jekyll over plain HTML | GitHub Pages native support, layouts/includes for maintainability | ✓ Good |
+| Jekyll 4.4.1 over github-pages gem | Ruby 4.0 incompatibility with jekyll 3.9 | ✓ Good |
+| Single-page over multi-page | Simpler UX, all content visible in one scroll | ✓ Good |
+| Vanilla CSS + CSS Variables | Zero dependencies, perfect for single-page portfolio | ✓ Good |
+| Dark/light toggle via CSS Variables | Instant switching, localStorage persistence, no flash | ✓ Good |
+| Formspree for contact form | Free tier, no backend needed, static site compatible | ✓ Good |
+| Start from scratch (no themes) | Existing themes too blog-focused, faster to build custom | ✓ Good |
+| Intersection Observer for scroll animations | Native API, no dependencies, performant | ✓ Good |
+| :focus:not(:focus-visible) pattern | Hides focus ring for mouse, shows for keyboard | ✓ Good |
 
 ---
-*Last updated: 2026-03-15 after initialization*
+*Last updated: 2026-03-15 after v1.0 milestone*

@@ -1,13 +1,58 @@
 // ============================================================================
-// Theme System: Light and Dark Mode CSS Variables
+// Theme System: Dark-First Design with Light Mode Override
 // ============================================================================
-// Defines CSS custom properties for dynamic theme switching via localStorage.
-// JavaScript toggles `body.dark-mode` class to switch between themes instantly.
+// Dark theme is the default (Coderon-style). Light mode activates via
+// `.light-mode` class toggled by JavaScript. CSS variables drive all colors.
 // ============================================================================
 
-// Light theme (default - applies to :root and light-mode class)
-// Note: JS toggles dark-mode/light-mode on <html> (documentElement)
-:root,
+// Dark theme (default — applies to :root)
+:root {
+  // Primary colors
+  --color-bg: #0a0a1a;
+  --color-bg-secondary: #141428;
+  --color-text: #f5f5f5;
+  --color-text-muted: #999999;
+  --color-accent: #4da6ff;
+  --color-accent-dark: #2d7cff;
+  --color-accent-light: #1a3d7a;
+
+  // Borders and shadows
+  --color-border: #333333;
+  --color-border-light: #2a2a2a;
+  --color-shadow: rgba(0, 0, 0, 0.5);
+  --color-shadow-lg: rgba(0, 0, 0, 0.7);
+
+  // Semantic colors
+  --color-success: #34d399;
+  --color-warning: #fbbf24;
+  --color-error: #f87171;
+  --color-info: #60a5fa;
+
+  // Links
+  --color-link: #4da6ff;
+  --color-link-visited: #7db8ff;
+  --color-link-hover: #99c4ff;
+
+  // Code highlighting
+  --color-code-bg: #1e1e1e;
+  --color-code-text: #e8e8e8;
+  --color-code-border: #333333;
+
+  // Form elements
+  --color-input-bg: #1e1e1e;
+  --color-input-border: #404040;
+  --color-input-focus: #4da6ff;
+  --color-button-bg: #0066cc;
+  --color-button-text: #ffffff;
+  --color-button-hover-bg: #4da6ff;
+
+  // Gradient and pill design tokens
+  --gradient-primary: linear-gradient(135deg, #9945ff 0%, #ff007a 100%);
+  --color-pill-bg: rgba(255, 255, 255, 0.08);
+  --color-pill-border: rgba(255, 255, 255, 0.12);
+}
+
+// Light theme (activates when .light-mode class is on <html>)
 .light-mode {
   // Primary colors
   --color-bg: #ffffff;
@@ -47,48 +92,11 @@
   --color-button-bg: #0066cc;
   --color-button-text: #ffffff;
   --color-button-hover-bg: #0052a3;
-}
 
-// Dark theme (applies when .dark-mode class is on <html>)
-.dark-mode {
-  // Primary colors
-  --color-bg: #0d0d0d;
-  --color-bg-secondary: #1e1e1e;
-  --color-text: #e8e8e8;
-  --color-text-muted: #999999;
-  --color-accent: #4da6ff;
-  --color-accent-dark: #2d7cff;
-  --color-accent-light: #1a3d7a;
-
-  // Borders and shadows
-  --color-border: #333333;
-  --color-border-light: #2a2a2a;
-  --color-shadow: rgba(0, 0, 0, 0.5);
-  --color-shadow-lg: rgba(0, 0, 0, 0.7);
-
-  // Semantic colors
-  --color-success: #34d399;
-  --color-warning: #fbbf24;
-  --color-error: #f87171;
-  --color-info: #60a5fa;
-
-  // Links
-  --color-link: #4da6ff;
-  --color-link-visited: #7db8ff;
-  --color-link-hover: #99c4ff;
-
-  // Code highlighting
-  --color-code-bg: #1e1e1e;
-  --color-code-text: #e8e8e8;
-  --color-code-border: #333333;
-
-  // Form elements
-  --color-input-bg: #1e1e1e;
-  --color-input-border: #404040;
-  --color-input-focus: #4da6ff;
-  --color-button-bg: #0066cc;
-  --color-button-text: #ffffff;
-  --color-button-hover-bg: #4da6ff;
+  // Light mode pill tokens
+  --gradient-primary: linear-gradient(135deg, #7c3aed 0%, #db2777 100%);
+  --color-pill-bg: rgba(0, 0, 0, 0.05);
+  --color-pill-border: rgba(0, 0, 0, 0.1);
 }
 
 // ============================================================================

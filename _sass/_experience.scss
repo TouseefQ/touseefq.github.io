@@ -10,10 +10,35 @@
   margin: 0 auto;
   background-color: var(--color-bg);
 
-  h2 {
+  > h2 {
     font-size: $font-size-h2;
-    margin-bottom: $spacing-md;
+    margin-bottom: $spacing-lg;
     color: var(--color-text);
+  }
+}
+
+.experience-grid {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xl;
+}
+
+.column-heading {
+  font-size: $font-size-h3;
+  color: var(--color-accent);
+  margin-bottom: $spacing-md;
+}
+
+@media (min-width: 768px) {
+  .experience-grid {
+    flex-direction: row;
+    gap: $spacing-xl;
+  }
+
+  .experience-column,
+  .education-column {
+    flex: 1;
+    min-width: 0;
   }
 }
 

@@ -1,7 +1,7 @@
 // ============================================================================
 // Header and Navigation Styling
 // ============================================================================
-// Sticky header with navigation and theme toggle button.
+// Sticky header with pill-style navigation and theme toggle button.
 // Remains visible while scrolling for quick access to sections.
 // ============================================================================
 
@@ -38,7 +38,7 @@
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 0.5rem;
   list-style: none;
   align-items: center;
 
@@ -46,24 +46,61 @@
     color: var(--color-text);
     text-decoration: none;
     font-weight: 500;
-    transition: color $transition-fast;
+    background: var(--color-pill-bg);
+    padding: 0.5rem 1.25rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: color $transition-fast, background $transition-fast, border-color $transition-fast;
 
     &:hover {
+      border-color: var(--color-pill-border);
       color: var(--color-accent);
     }
 
     &.active {
+      background: var(--gradient-primary);
+      color: white;
+      border-color: transparent;
+    }
+  }
+}
+
+.nav-social {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    color: var(--color-text-muted);
+    background: var(--color-pill-bg);
+    border: 1px solid transparent;
+    transition: color $transition-fast, border-color $transition-fast, background $transition-fast;
+
+    &:visited {
+      color: var(--color-text-muted);
+    }
+
+    &:hover,
+    &:visited:hover {
       color: var(--color-accent);
-      border-bottom: 2px solid var(--color-accent);
-      padding-bottom: 0.25rem;
+      border-color: var(--color-pill-border);
+    }
+
+    svg {
+      display: block;
     }
   }
 }
 
 .theme-toggle {
-  background: none;
-  border: none;
-  font-size: 1.5rem;
+  background: var(--color-pill-bg);
+  border: 1px solid var(--color-pill-border);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -71,14 +108,31 @@
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  transition: background-color $transition-fast;
+  color: var(--color-text-muted);
+  transition: color $transition-fast, background-color $transition-fast;
 
   &:hover {
-    background-color: var(--color-bg-secondary);
+    color: var(--color-text);
+    background-color: var(--color-pill-bg);
   }
 
   &:focus-visible {
     outline: 2px solid var(--color-accent);
     outline-offset: 2px;
   }
+
+  .icon-sun,
+  .icon-moon {
+    display: none;
+  }
+}
+
+// In dark mode: show sun icon (to switch to light)
+.dark-mode .theme-toggle .icon-sun {
+  display: block;
+}
+
+// In light mode: show moon icon (to switch to dark)
+.light-mode .theme-toggle .icon-moon {
+  display: block;
 }

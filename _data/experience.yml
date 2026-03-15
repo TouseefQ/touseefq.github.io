@@ -1,41 +1,62 @@
 - title: "Data Research Analyst"
   company: "SAP LeanIX"
   dates: "Jul 2023 – Present"
-  description: "Automated data pipelines and built internal tools for enterprise architecture platform analytics"
+  description:
+  bullets:
+    - "Reference Catalog Expansion (Software Lifecycle)"
+    - "Catalog / Database Maintenance (SaaS, IaaS, PaaS Classification)"
+    - "Software & Hardware Vendor Research (EAM Data Collection)"
+    - "Jira Service Management Usage (Jira/Confluence/Productboard)"
+    - "Remote and Agile Working (Scrum)"
   type: "work"
 
 - title: "IT Administrator"
   company: "University of Bonn"
   dates: "Apr 2024 – Present"
-  description: "Managing virtual machines, GitLab infrastructure, and internal systems administration"
+  description:
+  bullets:
+    - "IT admin at Institute of Oriental and Asian Studies"
+    - "Managing PC pools mainly operating Windows"
+    - "Managing hardware devices in the institute"
   type: "work"
 
 - title: "Web Developer"
   company: "KELO Robotics"
   dates: "Oct 2022 – Jun 2023"
-  description: "Redesigned company website and developed custom WordPress themes for robotics applications"
+  description:
+  bullets:
+    - "Developed, tested and maintained official website of the company"
+    - "Developed custom components for company's website"
+    - "Developed and enhanced E-Commerce shop of KELO Robotics"
   type: "work"
 
 - title: "M.Sc. Autonomous Systems"
   company: "Hochschule Bonn-Rhein-Sieg (H-BRS)"
   dates: "Oct 2022 – Present"
-  description: "Master's degree in autonomous systems with focus on embedded systems, robotics, and machine learning"
+  description: "Master's degree in autonomous systems with focus on software development, AI/ML, and control systems"
   type: "education"
 
 - title: "Web Developer"
   company: "elancer-team"
   dates: "Apr 2022 – Sep 2022"
-  description: "Built and deployed WordPress sites for multiple clients with custom functionality and design"
+  description:
+  bullets:
+    - "Developed, tested and maintained custom websites for respective clients"
+    - "Developed custom WordPress plugins"
+    - "Integrated Typescript components into websites"
   type: "work"
 
 - title: "Freelance Web Developer"
   company: "Fiverr"
   dates: "Sep 2019 – Mar 2022"
-  description: "Served 300+ clients building WordPress and Shopify sites, E-commerce solutions"
+  description:
+  bullets:
+    - "Worked with 300+ clients and helped them create their online presence"
+    - "Created and managed client's websites on a subscription model"
   type: "work"
 
 - title: "B.Sc. Mechatronics Engineering"
   company: "University of Wah"
   dates: "2017 – 2021"
-  description: "Bachelor's degree in mechatronics engineering with foundation in control systems and robotics"
+  description: "Bachelor's degree in mechatronics engineering with foundation in embedded systems and robotics"
   type: "education"

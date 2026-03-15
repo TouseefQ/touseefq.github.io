@@ -10,7 +10,7 @@
   <script>
     (function() {
       try {
-        const theme = localStorage.getItem('theme') || 'light';
+        const theme = localStorage.getItem('theme') || 'dark';
         const isDark = theme === 'dark';
 
         // Add appropriate class to document root
@@ -20,8 +20,8 @@
           document.documentElement.classList.add('light-mode');
         }
       } catch (e) {
-        // localStorage might be disabled; fall back to light theme
-        document.documentElement.classList.add('light-mode');
+        // localStorage might be disabled; fall back to dark theme
+        document.documentElement.classList.add('dark-mode');
       }
     })();
   </script>
@@ -86,13 +86,10 @@
   <!-- FOOTER: Navigation, social, credits -->
   {% include footer.html %}
 
-  <!-- BACK-TO-TOP: Scroll button -->
-  {% include back-to-top.html %}
-
   <!-- JavaScript: Theme toggle and interactions (async safe after content) -->
   <script src="{{ site.baseurl }}/assets/js/theme-toggle.js" async></script>
   <script src="{{ site.baseurl }}/assets/js/smooth-scroll.js" async></script>
-  <script src="{{ site.baseurl }}/assets/js/form-handler.js" async></script>
+  <script src="{{ site.baseurl }}/assets/js/form-handler.js"></script>
   <script src="{{ site.baseurl }}/assets/js/scroll-animations.js" async></script>
 </body>
 </html>

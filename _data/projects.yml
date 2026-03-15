@@ -53,3 +53,37 @@
     - "CI/CD"
     - "GitHub Actions"
     - "DevOps"
+
+- name: "sentiment-cicd"
+  description: "Full-stack NLP sentiment analysis app with automated testing via GitHub Actions and cloud deployment pipeline"
+  url: "https://github.com/TouseefQ/sentiment-cicd"
+  techs:
+    - "Python"
+    - "Flask"
+    - "TextBlob"
+    - "GitHub Actions"
+    - "CI/CD"
+    - "NLP"
+
+- name: "ecommerce-cluster"
+  description: "Polyglot microservices e-commerce platform with distributed JWT authentication and dual-database architecture"
+  url: "https://github.com/TouseefQ/ecommerce-cluster"
+  techs:
+    - "React"
+    - "Node.js"
+    - "Python"
+    - "PostgreSQL"
+    - "MongoDB"
+    - "Docker"
+    - "Microservices"
+
+- name: "core-pulse"
+  description: "Distributed web monitoring system tracking Core Web Vitals with Chrome Extension and automated Puppeteer auditing"
+  url: "https://github.com/TouseefQ/core-pulse"
+  techs:
+    - "React"
+    - "Node.js"
+    - "PostgreSQL"
+    - "Puppeteer"
+    - "Lighthouse"
+    - "Chrome Extension"

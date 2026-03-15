@@ -1,20 +1,6 @@
-<!-- Footer with credits and navigation -->
+<!-- Footer with credits -->
 <footer class="footer">
   <div class="footer-content">
     <p>&copy; 2026 Touseef Qamar. All rights reserved.</p>
-    <nav class="footer-nav">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div class="footer-social">
-      {% for link in site.data.social %}
-        <a href="{{ link.url }}" title="{{ link.name }}" aria-label="{{ link.name }} link" target="_blank" rel="noopener">
-          {{ link.name }}
-        </a>
-      {% endfor %}
-    </div>
   </div>
 </footer>

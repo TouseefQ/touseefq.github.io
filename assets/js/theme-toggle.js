@@ -27,7 +27,7 @@ function initTheme() {
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
   // Determine which theme to use
-  const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+  const theme = savedTheme || 'dark';
 
   // Apply the theme
   applyTheme(theme);
@@ -56,12 +56,12 @@ function applyTheme(theme) {
 }
 
 /**
- * Update the theme toggle button emoji
+ * Update the toggle button aria-label
  * @param {string} theme - Current theme ('dark' or 'light')
  */
 function updateToggleIcon(theme) {
-  // Show sun (☀️) in light mode, moon (🌙) in dark mode
-  themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+  // Icons are handled via CSS (dark-mode shows sun, light-mode shows moon)
+  themeToggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
 }
 
 /**
