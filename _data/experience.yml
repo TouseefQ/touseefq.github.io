@@ -1,6 +1,6 @@
 - title: "Data Research Analyst"
   company: "SAP LeanIX"
-  dates: "Jul 2023 – Present"
+  dates: "Mar 2023 – Present"
   description:
   bullets:
     - "Reference Catalog Expansion (Software Lifecycle)"
@@ -12,7 +12,7 @@
 
 - title: "IT Administrator"
   company: "University of Bonn"
-  dates: "Apr 2024 – Present"
+  dates: "Oct 2024 – Present"
   description:
   bullets:
     - "IT admin at Institute of Oriental and Asian Studies"
@@ -22,7 +22,7 @@
 
 - title: "Web Developer"
   company: "KELO Robotics"
-  dates: "Oct 2022 – Jun 2023"
+  dates: "May 2021 – Jan 2023"
   description:
   bullets:
     - "Developed, tested and maintained official website of the company"
@@ -32,13 +32,13 @@
 
 - title: "M.Sc. Autonomous Systems"
   company: "Hochschule Bonn-Rhein-Sieg (H-BRS)"
-  dates: "Oct 2022 – Present"
+  dates: "2019 – Present"
   description: "Master's degree in autonomous systems with focus on software development, AI/ML, and control systems"
   type: "education"
 
 - title: "Web Developer"
   company: "elancer-team"
-  dates: "Apr 2022 – Sep 2022"
+  dates: "Aug 2020 – May 2022"
   description:
   bullets:
     - "Developed, tested and maintained custom websites for respective clients"
@@ -48,7 +48,7 @@
 
 - title: "Freelance Web Developer"
   company: "Fiverr"
-  dates: "Sep 2019 – Mar 2022"
+  dates: "Jan 2013 – Dec 2021"
   description:
   bullets:
     - "Worked with 300+ clients and helped them create their online presence"
@@ -57,6 +57,6 @@
 
 - title: "B.Sc. Mechatronics Engineering"
   company: "University of Wah"
-  dates: "2017 – 2021"
+  dates: "2012 – 2016"
   description: "Bachelor's degree in mechatronics engineering with foundation in embedded systems and robotics"
   type: "education"
